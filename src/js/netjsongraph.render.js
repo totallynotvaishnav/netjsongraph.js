@@ -302,6 +302,7 @@ class NetJSONGraphRender {
     );
 
     _this.leaflet = _this.echarts._api.getCoordinateSystems()[0].getLeaflet();
+    _this.leaflet._zoomAnimated = false;
 
     _this.event.emit("onLoad");
     _this.event.emit("renderArray");
