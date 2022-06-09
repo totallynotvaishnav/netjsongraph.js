@@ -1,10 +1,10 @@
 import NetJSONGraphCore from "./netjsongraph.core.js";
-import { NetJSONGraphRender, echarts, L } from "./netjsongraph.render.js";
+import {NetJSONGraphRender, echarts, L} from "./netjsongraph.render.js";
 import registerLeafletSystem from "../../lib/js/echarts-leaflet/index.js";
 
 const colorTool = require("zrender/lib/tool/color");
 const aria = require("echarts/lib/visual/aria");
-const { each } = require("zrender/lib/core/util");
+const {each} = require("zrender/lib/core/util");
 const env = require("zrender/lib/core/env");
 
 class NetJSONGraph {
@@ -41,7 +41,7 @@ class NetJSONGraph {
            *
            * @return {object}         this.config
            */
-          onInit: function() {
+          onInit: function () {
             return this.config;
           },
 
@@ -54,7 +54,7 @@ class NetJSONGraph {
            *
            * @return {object}         this.config
            */
-          onRender: function() {
+          onRender: function () {
             this.utils.showLoading.call(this);
 
             return this.config;
@@ -69,7 +69,7 @@ class NetJSONGraph {
            *
            * @return {object}         this.config
            */
-          onUpdate: function() {
+          onUpdate: function () {
             return this.config;
           },
 
@@ -82,7 +82,7 @@ class NetJSONGraph {
            *
            * @return {object}         this.config
            */
-          afterUpdate: function() {
+          afterUpdate: function () {
             return this.config;
           },
 
@@ -95,17 +95,17 @@ class NetJSONGraph {
            *
            * @return {object}         this.config
            */
-          onLoad: function() {
+          onLoad: function () {
             this.utils.hideLoading.call(this);
 
             return this.config;
-          }
+          },
         },
-        config
-      )
+        config,
+      ),
     );
     graph.echarts = echarts.init(graph.el, null, {
-      renderer: graph.config.svgRender ? "svg" : "canvas"
+      renderer: graph.config.svgRender ? "svg" : "canvas",
     });
 
     graph.config.onInit.call(graph);
@@ -118,7 +118,7 @@ registerLeafletSystem(echarts, L, {
   colorTool,
   aria,
   each,
-  env
+  env,
 });
 
 window.NetJSONGraph = NetJSONGraph;
