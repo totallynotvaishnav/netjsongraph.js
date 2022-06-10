@@ -43,7 +43,7 @@ jobs:
       - name: QA checks
         run: ./run-qa-checks
 
-    build:
+  build:
       name: Tests and Coverage
       runs-on: ubuntu-20.04
 
