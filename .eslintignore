@@ -1,7 +1,0 @@
-/node_modules
-/dist
-webpack.*.js
-.eslintrc.js
-/lib
-/examples
-/coverage
