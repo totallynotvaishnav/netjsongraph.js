@@ -63,6 +63,7 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
+    "copy-webpack-plugin": "^11.0.0",
     "echarts": "^5.3.3",
     "echarts-gl": "^2.0.8",
     "kdbush": "^3.0.0",
