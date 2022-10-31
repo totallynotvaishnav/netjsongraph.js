@@ -64,7 +64,7 @@ module.exports = (env, argv) => ({
         },
         {
           from: path.resolve(__dirname, "src/css"),
-          to: path.resolve(__dirname, "dist/src"),
+          to: path.resolve(__dirname, "dist/src/css"),
         },
       ],
     }),
