@@ -1,4 +1,4 @@
-<!doctype html><head><title>netjsongraph.js: basic example</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"><link href="../../src/css/netjsongraph-theme.css" rel="stylesheet"/><link href="../../src/css/netjsongraph.css" rel="stylesheet"/><style>#container {
+<!doctype html><head><title>netjsongraph.js: basic example</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"><link href="../../lib/css/netjsongraph-theme.css" rel="stylesheet"/><link href="../../lib/css/netjsongraph.css" rel="stylesheet"/><style>#container {
       width: 100%;
       height: 100%;
       overflow: hidden;
@@ -76,7 +76,7 @@
     }</style><script src="../netjsongraph.min.js"></script></head><body><div id="legend"><h4>Legends</h4><p><span class="circle node">&nbsp;</span> ordinary node</p><p><span class="circle gateway">&nbsp;</span> gateway node</p><p><span class="link wireless">&nbsp;</span> wireless link</p><p><span class="link ethernet">&nbsp;</span> ethernet link</p></div><div id="container"></div><script>/*
           The demo is used to show how to set colorful nodes.
       */
-    const graph = new NetJSONGraph("../../public/assets/data/netjson-elementsLegend.json", {
+    const graph = new NetJSONGraph("../assets/data/netjson-elementsLegend.json", {
       el: "#container",
       graphConfig: {
         series: {

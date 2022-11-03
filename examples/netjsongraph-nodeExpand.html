@@ -1,11 +1,11 @@
-<!doctype html><html lang="en"><head><title>netjsongraph.js: basic example</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link href="../../src/css/netjsongraph-theme.css" rel="stylesheet"/><link href="../../src/css/netjsongraph.css" rel="stylesheet"/><script src="../netjsongraph.min.js"></script></head><body><script>/*
+<!doctype html><html lang="en"><head><title>netjsongraph.js: basic example</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link href="../../lib/css/netjsongraph-theme.css" rel="stylesheet"/><link href="../../lib/css/netjsongraph.css" rel="stylesheet"/><script src="../netjsongraph.min.js"></script></head><body><script>/*
           The demo is used to show hwo to interact with elements.
       */
       // `graph` render defaultly.
       const graph = new NetJSONGraph(
-        "../../public/assets/data/netjsongraph-foldNodes.json",
+        "../assets/data/netjsongraph-foldNodes.json",
         {
-          dealDataByWorker: "../../src/js/netjsonWorker.js",
+          dealDataByWorker: "../lib/js/netjsonWorker.js",
           echartsOption: {
             legend: {
               left: 10,
