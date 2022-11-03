@@ -70,6 +70,10 @@ module.exports = (env, argv) => ({
           from: path.resolve(__dirname, "src/js/netjsonWorker.js"),
           to: path.resolve(__dirname, "dist/lib/js/netjsonWorker.js"),
         },
+        {
+          from: path.resolve(__dirname, "index.html"),
+          to: path.resolve(__dirname, "dist"),
+        },
       ],
     }),
   ],
