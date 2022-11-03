@@ -56,7 +56,7 @@ module.exports = (env, argv) => ({
       patterns: [
         {
           from: path.resolve(__dirname, "public/assets"),
-          to: path.resolve(__dirname, "dist/public/assets"),
+          to: path.resolve(__dirname, "dist/assets"),
         },
         {
           from: path.resolve(__dirname, "lib"),
@@ -64,7 +64,11 @@ module.exports = (env, argv) => ({
         },
         {
           from: path.resolve(__dirname, "src/css"),
-          to: path.resolve(__dirname, "dist/src/css"),
+          to: path.resolve(__dirname, "dist/lib/css"),
+        },
+        {
+          from: path.resolve(__dirname, "src/js/netjsonWorker.js"),
+          to: path.resolve(__dirname, "dist/lib/js/netjsonWorker.js"),
         },
       ],
     }),
