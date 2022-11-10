@@ -77,6 +77,8 @@ jobs:
   build-and-deploy:
     name: Build and Deploy
     runs-on: ubuntu-20.04
+    env:
+      MAPBOX_URL_TEMPLATE: ${{ secrets.MAPBOX_URL_TEMPLATE }}
 
     steps:
       - name: Checkout 🛎️
@@ -85,10 +87,6 @@ jobs:
       - name: Installing dependencies
         run: |
           yarn install
-
-      - name: Pass the environment variables
-        env:
-          MAPBOX_URL_TEMPLATE: ${{ secrets.MAPBOX_URL_TEMPLATE }}
 
       - name: Build
         run: yarn build
