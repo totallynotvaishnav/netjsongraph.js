@@ -104,7 +104,6 @@ class NetJSONGraph {
           this.gui.nodeLinkInfoContainer =
             this.gui.createNodeLinkInfoContainer();
         }
-        console.log(process.env.MAPBOX_URL_TEMPLATE);
         if (this.config.switchMode && this.type === "netjson") {
           this.gui.renderModeSelector.onclick = () => {
             if (this.config.render === this.utils.mapRender) {
