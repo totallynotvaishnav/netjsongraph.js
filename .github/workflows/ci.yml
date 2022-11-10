@@ -86,6 +86,10 @@ jobs:
         run: |
           yarn install
 
+      - name: Pass the environment variables
+        env:
+          MAPBOX_URL_TEMPLATE: ${{ secrets.MAPBOX_URL_TEMPLATE }}
+
       - name: Build
         run: yarn build
 
