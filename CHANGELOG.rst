@@ -10,7 +10,7 @@ Version 0.2 [unreleased]
 ------------------------
 
 The library has been rewritten completely. The new version is not backward compatible with
-the previous versions. Refer the `migration guide <https://github.com/openwisp/netjsongraph.js/blob/master/README.md#upgrading-from-01x-versions-to-02x>` for more details.
+the previous versions. Refer the `migration guide <https://github.com/openwisp/netjsongraph.js/blob/master/README.md#upgrading-from-01x-versions-to-02x>`_ for more details.
 
 Features
 ~~~~~~~~
